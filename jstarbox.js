@@ -50,9 +50,9 @@
 			var size = arguments[1] || data.positioner.width();
 			var include_ghost = arguments[2];
 			if(include_ghost) {
-				data.ghost.css({width: ""+(val*size)+"px"});
+				data.ghost.css({width: ""+(val*100)+"%"});
 			}
-			data.colorbar.css({width: ""+(val*size)+"px"});
+			data.colorbar.css({width: ""+(val*100)+"%"});
 			data.opts.currentValue = val;
 		},
 		
